@@ -1,2 +1,2 @@
 # canvas-branding-gsd
-Static assets for branding the FAS Canvas sub-account
+Static assets for branding the GSD Canvas sub-account
