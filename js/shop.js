@@ -1,3 +1,23 @@
+/**
+ * allowed_terms is a white list of Canvas enrollment_term_ids where shopping is allowed
+ * for a specific school
+ * NOTE - the term ids in allowed_terms must be strings, not ints
+ * @type {string[]}
+ */
+
+
+//update allowed terms with correct terms and prod shopping url before
+//deploying to prod
+
+//var allowed_terms = ['36', '37', '39'];
+//var shopping_tool_url = "https://icommons-tools.tlt.harvard.edu/shopping";
+
+/**
+ * terms and  shopping tool url for dev/stage
+ */
+var allowed_terms = ['3', '6', '7'];
+var shopping_tool_url = "https://icommons-tools.stage.tlt.harvard.edu/shopping";
+
 
 /**
  * Create the div that will hold the shoping banner
@@ -150,13 +170,6 @@ var course_url = '/api/v1/courses/' + course_id;
 var login_url = window.location.origin+"/login";
 
 /**
- * dev tool shopping url
- * var shopping_tool_url = "https://icommons-tools.dev.tlt.harvard.edu/shopping";
- */
-
-var shopping_tool_url = "https://icommons-tools.tlt.harvard.edu/shopping";
-
-/**
  * Tool tip text and html link
  * @type {string}
  */
@@ -168,23 +181,6 @@ var tooltip_link = '<a data-tooltip title="' + data_tooltip + '" target="_blank"
 var no_user_canvas_login = '<div class="tltmsg tltmsg-shop"><p class="participate-text">Students: ' +
   '<a href="'+login_url+'">login</a> to get more access during shopping period.' + tooltip_link + '</p></div>';
 
-
-/**
- * allowed_terms is a white list of Canvas enrollment_term_ids where shopping is allowed
- * for a specific school
- * NOTE - the term ids in allowed_terms must be strings, not ints
- * @type {string[]}
- */
-
-/**
- * terms for dev
- * var allowed_terms = ['3', '4'];
- */
-
-/**
- * updated allowed terms with correct terms before deploying to prod
- */
-var allowed_terms = ['36', '37', '39'];
 
 var course_id_is_valid = (course_id > 0);
 var user_enrolled = false;
