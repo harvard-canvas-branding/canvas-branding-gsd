@@ -13,10 +13,10 @@
 //var shopping_tool_url = "https://icommons-tools.tlt.harvard.edu/shopping";
 
 /**
- * terms and  shopping tool url for dev
+ * terms and  shopping tool url for dev/stage
  */
 var allowed_terms = ['3', '6', '7'];
-var shopping_tool_url = "https://icommons-tools.dev.tlt.harvard.edu/shopping";
+var shopping_tool_url = "https://icommons-tools.stage.tlt.harvard.edu/shopping";
 
 
 /**
